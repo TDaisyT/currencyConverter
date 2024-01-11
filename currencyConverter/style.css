@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(pics/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    text-align: end;
+}
+
+nav a{
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 2%;
+    position: relative;
+    color:lightcyan;
+    text-decoration: none;
+    font-size: 25px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+nav a:hover{
+        background-color: rgb(255, 255, 255);
+        color:blueviolet;
+
+}
+.content{
+    width: 40%;
+    margin-left: 5%;
+    text-align: center;
+}
+.content h1 {
+    margin-bottom: 8%;
+    font-size: 70px;
+    color: white;
+}
+.content h1 span{
+    color: goldenrod;
+}
+.content p{
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.content .btn {
+    display: inline-block;
+    margin-top: 8%;
+    text-align: center;
+    position: relative;
+    background-color: goldenrod;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.content .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 242, 0)   ;
+    transition: right 0.3s ease;
+}
+
+.content .btn:hover::before {
+    right: 0;
+}
+.currencies{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 3%;
+
+}
+.currencies .coins{
+    margin-right: 3%;
+    display: flex;
+    align-items: center;
+    border: solid white 2px;
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+.currencies .coins img{
+    width: 50px;
+}
+.currencies .coins div {
+    margin-left: 20px;
+    color: white;
+}
+.currencies .coins h2{
+    color: goldenrod;
+    margin-bottom: 10%;
+}
+.currencies .coins p{
+    font-size: 18px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+   
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+    nav{
+        text-align: center;
+    }
+    nav a{
+     
+        font-size: 20px;
+        padding: 5px 10px;
+        margin-right:5px;
+    }
+    
+    .content{
+        width: 100%;
+        margin-top: 25px;
+        margin-left: 0;
+    }
+    .content h1{
+        font-size: 30px;
+        margin-bottom: 4%;
+    }
+    .content p{
+        font-size: 15px;
+    }
+    .content .btn{
+        margin-top: 4%;
+        padding: 10px 20px;
+
+    }
+    .currencies{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 10px;
+        
+    }
+    .currencies .coins{
+        padding:10px 40px;
+        margin-top: 15px;
+    }
+    .currencies .coins img{
+        width: 30px;
+    }
+    .currencies .coins h2{
+        margin-bottom: 10%;
+        font-size: 20px;
+    }
+    .currencies .coins p{
+        font-size: 15px;
+    }
+    .currencies .coins div {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .content h1{
+        font-size: 40px;
+        margin-bottom: 4%;
+    }
+    .content p{
+        font-size: 20px;
+    }
+    nav{
+        margin-bottom: 10px;
+    }
+    nav a{
+        font-size: 23px;
+    }
+
+    .currencies .coins{
+        padding:15px 45px;
+        margin-top: 10px;
+    }
+    .currencies .coins img{
+        width: 40px;
+    }
+    .currencies .coins h2{
+        margin-bottom: 10%;
+        font-size: 20px;
+    }
+    .currencies .coins p{
+        font-size: 18px;
+    }
+    
+   
+}
